@@ -1,0 +1,15 @@
+Introduction:
+Five steps in cleaning this data set is described as below:
+First, all similar dataset is combined by rbind() function.
+Second,only the column names with mean or std are taken from the original dataset. And the features.txt is read into R to give the right column names for this subset dataset.
+Third, we substitute ID numbers of activities with activity names. 
+Fourth, cbind is used to combine activities,subject and all other variables in data
+Finally,a tidy dataset with all averages for each subject and activity is obtained. The file name is average_alldata.txt and uploaded to the repository as well.
+
+Variables:
+x_train,y_train,x_test,y_test,subject_train,subject_test contain data from original files.
+x_all,y_all,subject_all are the merged dataset for the purpose of analysis
+features contain the variable names for x_all, while features_mean_std only contain variable names including mean or std.
+x_mean_std is the subset data of x_all, only containing columns corresponding to mean or standard deviation.
+alldata merges x_mean_std,y_all and subject_all
+average_alldata is the tidy dataset containing the averages for each subject and activity type
